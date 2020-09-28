@@ -1,0 +1,74 @@
+.board {
+    display: grid;
+    margin: 1rem;
+    padding: 2rem;
+    height: 80vh;
+}
+
+.box {
+    margin: 0.1rem;
+    padding: 1rem;
+    background-color: rgb(8, 132, 189);
+}
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHh-92Ic5f8xWUT4Yekuvz9ho7nea8-W3YPQ&usqp=CAU");
+    background-size: 100%, 100%;
+}
+
+.fas {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+/* .far {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+} */
+
+.scores{
+    margin: 2.5rem;
+    display: grid ;
+    font-family: Impact, Charcoal, sans-serif;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    text-align: center;
+}
+
+#dog-score{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(4, 58, 83);
+}
+#cat-score{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(89, 14, 124);
+}
+
+#add-board{
+    background-color: rgb(69, 173, 214);
+    justify-items: center;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 3px solid rgb(19, 17, 2)
+}
+
+#center-board{
+    text-align: center;
+}
+
+#load-board{
+    margin: 1rem;
+    padding: 1rem;
+}
+#columns{
+    margin: 1rem;
+    padding: 1rem;
+}
+#rows{
+    margin: 1rem;
+    padding: 1rem;
+}

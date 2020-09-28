@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs VS Cats</title>
+</head>
+
+<body>
+
+    <div id="center-board"><span id="add-board">
+        <input type="text" id="rows" placeholder="how many rows">
+        <input type="text" id="columns" placeholder="how many columns">
+        <button id="load-board">load-board</button>
+    </span></div>
+
+    <div class="scores"></div>
+
+    <script id="scores-template" type="text/x-handlebars-template">
+        <div class="add-score">
+            <span id="dog-score">Dog score: {{player1Score}}</span> 
+            <span id="cat-score">Cat score: {{player2Score}}</span>
+        </div> 
+    </script>
+    <div class="board"></div>
+
+    <script id="board-template" type="text/x-handlebars-template">
+        {{#each matrix}}
+            {{#each this}}
+               <div class="box">{{icons this}}</div> 
+            {{/each}}
+        {{/each}}
+    </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="Matrix.js"></script>
+    <script src="CollectBones.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
